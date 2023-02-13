@@ -3,13 +3,11 @@ age_list = [int(input('Введите возраст посетителя: ')) f
 sum = 0
 for age in age_list:
     if 0 < age < 18:
-        price = None
+        sum += 0
     elif 18 <= age <= 25:
-        price = 990
-        sum += price
+        sum += 990
     elif 25 < age < 100:
-        price = 1390
-        sum += price
+        sum += 1390
     else:
         print('Введено неверное значение возраста:', age)
 if tickets > 3:
